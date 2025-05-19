@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(logger);
-app.use(postRouter);
+app.use('/posts', postRouter);
 
 
 app.listen(PORT, () => {
